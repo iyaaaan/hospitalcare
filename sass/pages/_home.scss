@@ -1,0 +1,142 @@
+.hero {
+	background: url(http://localhost/hospitalcare/wp-content/uploads/2021/03/hero-banner.jpg), linear-gradient(to right, #b7f0f4, #3094e8);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-blend-mode: multiply;
+	height: 100vh;
+	width: 100%;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0 1.5rem;
+
+	&__caption-wrap {
+		width: 100%;
+		text-align: center;
+
+		@include respond-to(medium) {
+			width: 50%;
+			margin-left: 50px;
+			text-align: left;
+		}
+	}
+
+	&__caption {
+		color: var(--white);
+		font-size: var(--font-large);
+		font-weight: bold;
+		line-height: 1;
+
+		@include respond-to(medium) {
+			font-size: var(--font-extra-large);
+		}
+	}
+
+	&__cta {
+		background-color: var(--color-primary);
+		border-radius: .5rem;
+		color: var(--white);
+		display: inline-block;
+		font-size: 2rem;
+		text-align: center;
+		margin-top: 3rem;
+		padding: 1.5rem;
+		width: 200px;
+		transition: .3s;
+
+		&:hover {
+			background-color: #0c5592;
+		}
+	}
+}
+
+
+.testimonials {
+	background: linear-gradient(to right, #6fedf6, #2a88d7);
+	padding: 5rem 1.5rem;
+
+
+	&__header {
+		color: var(--color-primary);
+		font-family: 'Poppins-Black', sans-serif;
+		font-size: var(--font-large);
+		font-weight: 900;
+		margin-bottom: 5rem;
+		text-align: center;
+	}
+
+	&__item {
+		width: 95%;
+		margin: 5rem auto 0;
+		position: relative;
+		background: #fff;
+		border-radius: 1rem;
+		box-shadow: -3px 3px 9px 0px #6e6e6e;
+		padding: 5rem 1.5rem 3rem 1.5rem;
+
+		&::after {
+			content: "“";
+			position: absolute;
+			color: var(--muted);
+			font-size: 15rem;
+			font-weight: bold;
+			font-family: sans-serif;
+			line-height: 0;
+			right: 30px;
+			top: 40px;
+			transform: rotateY(180deg);
+		}
+
+		@include respond-to(small) {
+			margin: 0 auto;
+			padding: 3rem 3rem 3rem 5rem;
+			width: 70%;
+		}
+
+		@include respond-to(medium) {
+			width: 50%;
+		}
+	}
+
+	&__img-wrap {
+		border-radius: 9999px;
+		box-shadow: 0 0px 0px 5px var(--color-primary);
+		display: block;
+		position: absolute;
+		top: -5rem;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 100px;
+		width: 100px;
+
+		@include respond-to(small) {
+			top: -2.5rem;
+			left: -5rem;
+			transform: translateX(0);
+		}
+	}
+
+	&__img {
+		border-radius: 999px;
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	&__text {
+		padding: 1.5rem;
+		line-height: 2;
+		font-style: italic;
+	}
+
+	&__author {
+		padding: 1.5rem;
+		color: var(--color-primary);
+	}
+}
+
+.owl-carousel .owl-stage-outer {
+	overflow: visible;
+}

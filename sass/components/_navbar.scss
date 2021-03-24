@@ -1,0 +1,107 @@
+.navbar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+
+	background-color: var(--white);
+	box-shadow: 0 0 1rem #6e6e6e;
+	padding: 1.5rem;
+	transition: all 0.3s ease;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 50;
+
+	&__logo-wrap {
+		display: block;
+		width: 15rem;
+	}
+
+	&__logo {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	&__menu {
+		flex: 0 0 100%;
+		display: flex;
+		flex-wrap: wrap;
+		order: 3;
+		text-align: right;
+		font-size: var(--font-extra-small);
+		letter-spacing: 0.5rem;
+		max-height: 0;
+		list-style-type: none;
+		transition: 0.5s linear;
+		overflow: hidden;
+
+		@include respond-to(large) {
+			flex: 0 0 auto;
+			max-height: 100%;
+		}
+
+		&.is-opened {
+			max-height: 500px;
+		}
+	}
+
+	& li {
+		font-size: 2rem;
+		margin-right: 3rem;
+		padding: 1rem 0;
+
+		flex: 0 0 100%;
+
+		@include respond-to(large) {
+			flex: 0 0 auto;
+		}
+
+	}
+
+	& a {
+		color: var(--color-primary);
+
+		&:hover,
+		&.is-active {
+			color: var(--color-secondary);
+		}
+	}
+
+	&__toggler-wrap {
+		display: block;
+		background: var(--color-primary);
+		padding: 2.5rem 1.5rem;
+
+		@include respond-to(large) {
+			display: none;
+		}
+	}
+
+	&__toggler,
+	&__toggler::after {
+		height: .8rem;
+		width: 3rem;
+		background-color: var(--white);
+		position: relative;
+		display: block;
+		transition: 0.5s cubic-bezier(1, 0.18, 0, 0.9);
+	}
+
+
+	&__toggler::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: rotate(90deg);
+	}
+
+
+	&__toggler.is-toggled {
+		transform: rotate(135deg);
+	}
+
+}

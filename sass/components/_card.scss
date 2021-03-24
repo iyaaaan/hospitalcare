@@ -1,0 +1,78 @@
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 -15px;
+
+	&__header {
+		color: var(--color-primary);
+		font-family: 'Poppins-Black', sans-serif;
+		font-size: var(--font-large);
+		font-weight: 900;
+		margin-bottom: 5rem;
+		text-align: center;
+	}
+
+	&-wrap {
+		flex: 0 0 100%;
+		margin-bottom: 3rem;
+		padding: 0 1.5rem;
+
+		@include respond-to(small) {
+			flex: 0 0 50%;
+		}
+
+		@include respond-to(medium) {
+			flex: 0 0 33.333333%;
+		}
+	}
+
+	&__item {
+		border-radius: 1rem;
+		box-shadow: 0 0 1rem var(--color-whisper);
+		text-align: center;
+		padding: 3rem 1.5rem;
+		position: relative;
+		transition: .3s;
+
+		&::after {
+			content: '';
+			position: absolute;
+			height: .5rem;
+			width: 0;
+			background-color: var(--color-secondary);
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			transition: .3s;
+
+		}
+
+		&:hover::after {
+			width: 100%;
+		}
+
+		&:hover {
+			transform: translateY(-1rem);
+		}
+	}
+
+	&__icon {
+		color: var(--color-secondary);
+		font-size: var(--font-extra-large);
+		margin-bottom: 1.5rem;
+	}
+
+
+	&__title {
+		color: var(--color-primary);
+		line-height: 1;
+		margin-bottom: 1rem;
+	}
+
+	&__text {
+		color: var(--muted);
+		line-height: 1.5;
+	}
+}

@@ -1,0 +1,228 @@
+.about-banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(http://localhost/hospitalcare/wp-content/uploads/2021/03/banner-1.jpg) rgba(4, 51, 102, 0.9);
+	background-blend-mode: multiply;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 50px;
+	height: 300px;
+	width: 100%;
+	margin-top: 12rem;
+}
+
+.about-breadcrumb {
+
+	&-title {
+		font-size: 38px;
+		font-weight: bold;
+		color: #fff;
+		margin-bottom: 15px;
+	}
+
+	&-nav {
+		display: block;
+		text-align: center;
+
+		& li,
+		& a {
+			position: relative;
+			color: #fff;
+			display: inline-block;
+			list-style: none;
+			margin-right: 15px;
+			text-decoration: none;
+		}
+
+		& li:nth-of-type(1)::after {
+			margin: auto;
+			position: absolute;
+			content: '';
+			top: 0;
+			bottom: 0;
+			width: 6px;
+			height: 6px;
+			border-top: 2px solid #ffffff;
+			border-right: 2px solid #ffffff;
+			transform: rotate(48deg);
+			right: -5px;
+		}
+
+		& li:nth-of-type(2) {
+			color: var(--color-secondary);
+		}
+	}
+}
+
+.about {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+
+	&__founder {
+		flex: 0 0 100%;
+		padding: 0 15px;
+		margin-bottom: 5rem;
+
+		@include respond-to(small) {
+			flex: 0 0 60%;
+			padding: 15px;
+		}
+
+		@include respond-to(medium) {
+			flex: 0 0 40%;
+		}
+
+		&-img {
+			display: block;
+			border: double 5px transparent;
+			//			border-radius: 9999px;
+			background-image: linear-gradient(white, white), radial-gradient(circle at top right, #53a3a9, #083b66);
+			background-origin: border-box;
+			background-clip: content-box, border-box;
+			margin: 0 auto;
+			height: auto;
+			width: 100%;
+		}
+
+		&-details {
+			display: block;
+			text-align: center;
+			margin: 1.5rem auto;
+		}
+
+		&-name {
+			font-size: 20px;
+			font-weight: 900;
+			margin-bottom: 10px;
+			color: var(--color-primary);
+		}
+
+		&-role {
+			color: var(--muted);
+		}
+	}
+
+	&__history {
+		flex: 0 0 100%;
+		padding: 0 15px;
+
+		@include respond-to(medium) {
+			flex: 0 0 50%;
+			padding: 15px;
+		}
+
+		&-title {
+			font-size: var(--font-medium);
+			font-weight: bold;
+			margin-bottom: 20px;
+			color: var(--color-primary);
+			line-height: 1;
+			text-align: center;
+
+			@include respond-to(medium) {
+				text-align: left;
+			}
+		}
+
+		&-text {
+			font-weight: lighter;
+			line-height: 1.5;
+			margin: 15px 0;
+			text-align: justify;
+
+			@include respond-to(medium) {
+				text-align: left;
+			}
+		}
+
+	}
+}
+
+.team {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	&-container {
+		margin-bottom: 10rem;
+	}
+
+	&-heading {
+		margin: 0 0 50px;
+
+		@include respond-to(medium) {
+			margin: 0 150px 50px;
+		}
+
+		& p {
+			font-weight: lighter;
+			text-align: center;
+		}
+	}
+
+	&-title {
+		color: var(--color-primary);
+		font-size: var(--font-large);
+		font-weight: 900;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	&-card-wrap {
+		flex: 0 0 100%;
+		padding: 0 15px;
+		margin-bottom: 30px;
+
+		@include respond-to(small) {
+			flex: 0 0 50%;
+		}
+
+		@include respond-to(large) {
+			flex: 0 0 25%;
+		}
+
+	}
+
+	&-card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border: 1px solid #e6e6e6;
+		border-radius: 10px;
+		transition: .3s;
+		border-bottom: 5px solid var(--color-secondary);
+
+		&:hover {
+			transform: translateY(-10px);
+		}
+	}
+
+	&-img {
+		border-radius: 10px 10px 0 0;
+		width: 100%;
+		display: block;
+		height: auto;
+	}
+
+	&-details {
+		padding: 15px;
+		text-align: center;
+	}
+
+	&-name {
+		font-size: 24px;
+		font-weight: bold;
+		margin-bottom: 10px;
+		color: var(--color-primary);
+	}
+
+	&-role {
+		font-weight: lighter;
+		margin-bottom: 10px;
+		color: var(--muted);
+	}
+}

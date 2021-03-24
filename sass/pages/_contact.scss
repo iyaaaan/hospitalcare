@@ -1,0 +1,144 @@
+//products.php
+.contact-banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(http://localhost/wordpress/wp-content/themes/robinrose/src/assets/images/banner/1.jpg) rgba(4, 51, 102, 0.9);
+	background-blend-mode: multiply;
+	background-attachment: fixed;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 50px;
+	height: 300px;
+	width: 100%;
+	margin-top: 12rem;
+}
+
+.contact-breadcrumb {
+
+	&-title {
+		color: #fff;
+		font-size: 38px;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+
+	&-nav {
+		display: block;
+		text-align: center;
+
+		& li,
+		& a {
+			position: relative;
+			color: #fff;
+			display: inline-block;
+			list-style: none;
+			margin-right: 15px;
+			text-decoration: none;
+		}
+
+		& li:nth-of-type(1)::after {
+			margin: auto;
+			position: absolute;
+			content: '';
+			top: 0;
+			bottom: 0;
+			width: 6px;
+			height: 6px;
+			border-top: 2px solid #ffffff;
+			border-right: 2px solid #ffffff;
+			transform: rotate(48deg);
+			right: -5px;
+		}
+	}
+}
+
+
+.contact-form {
+	border-radius: 15px;
+	box-shadow: 0 0 10px #e6e6e6;
+	margin: 0 auto 80px;
+	padding: 50px 20px 20px;
+
+	&__title {
+		color: #043366;
+		font-weight: 700;
+		font-size: var(--font-large);
+		font-weight: 900;
+		line-height: 1;
+		margin-bottom: 15px;
+	}
+
+	&__text {
+		font-weight: lighter;
+		line-height: 1.5;
+	}
+
+	&__wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 30px -15px;
+	}
+
+	&__item {
+		flex: 0 0 100%;
+		margin-bottom: 20px;
+		padding: 0 15px;
+
+		&:last-child {
+			flex: 0 0 100%;
+		}
+
+		@include respond-to(small) {
+			flex: 0 0 50%;
+		}
+	}
+
+	&__input,
+	&__textarea {
+		color: #043366;
+		background: transparent;
+		border: 1px solid #e6e6e6;
+		border-radius: 10px;
+		padding: 10px 20px;
+		width: 100%;
+		font-family: 'Poppins', sans-serif;
+
+		&:focus {
+			border: 1px solid #39daef;
+			transition: .3s;
+			outline: none;
+		}
+	}
+
+	&__input {
+		height: 50px;
+	}
+
+	&__textarea {
+		height: 200px;
+		resize: none;
+	}
+
+	&__submit {
+		background: #043366;
+		border-radius: 5px;
+		color: #fff;
+		display: inline-block;
+		margin-top: 30px;
+		padding: 15px;
+		min-width: 180px;
+		text-decoration: none;
+		text-align: center;
+		transition: .3s;
+
+		&:hover {
+			background: #053e7b;
+			box-shadow: 0 0 10px #6e6e6e;
+			color: #fff;
+		}
+	}
+
+}

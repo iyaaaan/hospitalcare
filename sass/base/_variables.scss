@@ -1,0 +1,35 @@
+/*########## VARIABLES ##########*/
+:root {
+	/* .5rem (5px) */
+	--spacing-xs: .5;
+
+	/* 1rem (10px) */
+	--spacing-sm: 1;
+
+	/* 1.5rem (15px) */
+	--spacing-md: 1.5;
+
+	/* 2rem (20px) */
+	--spacing-lg: 2;
+
+
+	--font-primary: 'Poppins', sans-serif;
+	--font-title: 'PlayfairDisplay', serif;
+	--font-header: 'Poppins-Black', serif;
+
+	--color-primary: #083b66;
+	--color-secondary: #53a3a9;
+	--color-highlight: #8e440c;
+	--color-whisper: #e6e6e6;
+	--white: #fff;
+	--black: #242424;
+	--red: #c71b1b;
+	--muted: #6e6e6e;
+	--alt: #fdf4ed;
+
+	--font-extra-small: calc(12px + (14 - 12) * ((100vw - 300px) / (1600 - 300)));
+	--font-small: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+	--font-medium: calc(24px + (28 - 24) * ((100vw - 300px) / (1600 - 300)));
+	--font-large: calc(35px + (50 - 35) * ((100vw - 300px) / (1600 - 300)));
+	--font-extra-large: calc(55px + (65 - 55) * ((100vw - 300px) / (1600 - 300)));
+}

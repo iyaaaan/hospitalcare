@@ -1,0 +1,60 @@
+h1 {
+	font-size: 4rem;
+	/* 40px */
+}
+
+h2 {
+	font-size: 3.2rem;
+	/* 32px */
+}
+
+h3 {
+	font-size: 2.8rem;
+	/* 28px */
+}
+
+h4 {
+	font-size: 2.4rem;
+	/* 24px */
+}
+
+h5 {
+	font-size: 2rem;
+	/* 20px */
+}
+
+p {
+	letter-spacing: .15rem;
+	margin-bottom: 1.5rem;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+	text-decoration: none;
+	/* removes text decorations on links */
+}
+
+/* ############ Title ############ */
+.title {
+	flex: 0 0 100%;
+	margin-bottom: 7.5rem;
+	text-align: center;
+	font-size: var(--font-large);
+	color: #8e440c;
+	font-family: var(--font-title);
+	font-weight: normal;
+	position: relative;
+}
+
+.title::after {
+	content: '';
+	position: absolute;
+	left: calc(50% - 2rem);
+	bottom: -1.3rem;
+	width: 4rem;
+	height: 1px;
+	background-color: #8e440c;
+}
