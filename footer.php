@@ -47,7 +47,7 @@
 
 <div class="sub-footer">
 	<div class="sub-footer__copyright">
-		Copyright &#169; 2021 - Kristyan.
+		<span>Copyright &#169; 2021 | <a href="#" class="sub-footer__copyright-link">Kristyan.</a></span>
 	</div>
 	<ul class="sub-footer__media">
 		<li class="sub-footer__media-item">

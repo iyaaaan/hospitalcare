@@ -85,34 +85,23 @@
 
 
 .sub-footer {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	background: linear-gradient(to right, #2a88d7, #6fedf6);
+	background: linear-gradient(to right, #6fedf6, #2a88d7);
 	color: #fff;
 	font-weight: bold;
-	padding: 2rem;
+	padding: 8rem 0;
 	text-align: center;
 
 	&__copyright {
-		flex: 0 0 100%;
 		font-size: 1.8rem;
 		margin-bottom: 1rem;
 
-		@include respond-to(small) {
-			flex: 0 0 auto;
-			margin: 0;
+		&-link {
+			color: #fff;
 		}
 	}
 
 	&__media {
-		flex: 0 0 100%;
 		list-style: none;
-
-		@include respond-to(small) {
-			flex: 0 0 auto;
-		}
 
 		&-item {
 			display: inline-block;
