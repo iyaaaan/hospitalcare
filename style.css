@@ -1060,6 +1060,9 @@ a:focus {
   transform: rotate(48deg);
   right: -5px;
 }
+.contact-breadcrumb-nav li:nth-of-type(2) {
+  color: var(--color-secondary);
+}
 
 .contact-form {
   border-radius: 15px;
