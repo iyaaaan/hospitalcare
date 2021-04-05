@@ -45,6 +45,23 @@
 
 </div>
 
+<div class="sub-footer">
+	<div class="sub-footer__copyright">
+		Copyright &#169; 2021 - Kristyan.
+	</div>
+	<ul class="sub-footer__media">
+		<li class="sub-footer__media-item">
+			<a href="#" class="sub-footer__media-link sub-footer__facebook"><i class="fab fa-facebook-f"></i></a>
+		</li>
+		<li class="sub-footer__media-item">
+			<a href="#" class="sub-footer__media-link sub-footer__insta"><i class="fab fa-instagram"></i></a>
+		</li>
+		<li class="sub-footer__media-item">
+			<a href="#" class="sub-footer__media-link sub-footer__twitter"><i class="fab fa-twitter"></i></a>
+		</li>
+	</ul>
+</div>
+
 
 <?php wp_footer(); ?>
 
